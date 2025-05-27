@@ -37,12 +37,14 @@ import AboutUs from "./components/guest/AboutUs";
 import Menu from "./components/guest/Menu";
 import Footer from "./components/guest/Footer";
 import Gallery from "./components/guest/Gallery";
-
+import Products from "./pages/Product";
+const ProductDetail = React.lazy(() => import("./pages/ProductDetail"))
 export default function App() {
   return (
     <Suspense fallback={<Loading />}>
       <Routes>
         <Route path="/*" element={<NotFound />} />
+
         <Route element={<MainLayout />}>
           <Route path="/" element={<Dashboard />} />
           <Route path="/user" element={<UsersTable />} />
@@ -52,6 +54,8 @@ export default function App() {
           <Route path="/Error401" element={<Error401 />} />
           <Route path="/Error403" element={<Error403 />} />
           <Route path="/Error404" element={<Error404 />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/products/:id" element={<ProductDetail />} />
         </Route>
 
         <Route element={<AuthLayout />}>
