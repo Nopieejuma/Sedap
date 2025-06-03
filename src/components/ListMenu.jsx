@@ -63,6 +63,12 @@ export default function ListMenu() {
                         className={menuClass}>
                             <IoMdPeople  className="mr-4 text-xl"/>GuestSide</NavLink>
 	                  </li>
+                       <li>
+	                    <NavLink id="menu-9" 
+                        to="/Notes"
+                        className={menuClass}>
+                            <IoMdPeople  className="mr-4 text-xl"/>Notes</NavLink>
+	                  </li>
                 </ul>
             </div>
             );

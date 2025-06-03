@@ -37,6 +37,7 @@ import AboutUs from "./components/guest/AboutUs";
 import Menu from "./components/guest/Menu";
 import Footer from "./components/guest/Footer";
 import Gallery from "./components/guest/Gallery";
+import Notes from "./components/Notes";
 
 export default function App() {
   return (
@@ -52,6 +53,7 @@ export default function App() {
           <Route path="/Error401" element={<Error401 />} />
           <Route path="/Error403" element={<Error403 />} />
           <Route path="/Error404" element={<Error404 />} />
+           <Route path="/Notes" element={<Notes/>} />
         </Route>
 
         <Route element={<AuthLayout />}>
