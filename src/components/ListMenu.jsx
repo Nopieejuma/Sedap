@@ -1,3 +1,4 @@
+import { MdFastfood } from "react-icons/md"; 
 import { MdReportGmailerrorred } from "react-icons/md"; 
 import { IoMdPeople } from "react-icons/io"; 
 import { SlBasket } from "react-icons/sl"; 
@@ -68,6 +69,12 @@ export default function ListMenu() {
                         to="/Notes"
                         className={menuClass}>
                             <IoMdPeople  className="mr-4 text-xl"/>Notes</NavLink>
+	                  </li>
+                      <li>
+	                    <NavLink id="menu-10" 
+                        to="/products"
+                        className={menuClass}>
+                            <MdFastfood  className="mr-4 text-xl"/>Products</NavLink>
 	                  </li>
                 </ul>
             </div>
