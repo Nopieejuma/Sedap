@@ -15,6 +15,17 @@
   src: url("/fonts/Poppins-ExtraBold.ttf");
 }
 
+/* Tambahan daisy UI */
+@import "tailwindcss";
+
+/** Tambahkan Ini **/
+@plugin "daisyui" {
+    themes: light --default, dark --prefersdark, cupcake, sunset;
+}
+
+
+
+
 @theme {
   --font-barlow: "Barlow", sans-serif;
   --font-poppins: "Poppins", sans-serif;

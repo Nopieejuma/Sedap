@@ -24,14 +24,22 @@ export default function PageHeader({ title, breadcrumb, children }) {
 
   return (
     <div id="pageheader-container" className="flex items-center justify-between p-4">
-      <div id="pageheader-left" className="flex flex-col">
+      {/* <div id="pageheader-left" className="flex flex-col">
         <span id="page-title" className="text-3xl font-semibold">
           {title}
         </span>
         <div id="breadcrumb-links" className="flex items-center font-medium mt-2">
           {renderBreadcrumb()}
         </div>
-      </div>
+      </div> */}
+
+<div className="breadcrumbs text-sm">
+  <ul>
+    <li><a>Home</a></li>
+    <li><a>Documents</a></li>
+    <li>Add Document</li>
+  </ul>
+</div>
 
       <div id="action-button" className="flex gap-2">
         {children}
